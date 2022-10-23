@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,103 +53,100 @@
     <UnityVersion>2020.3.21f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HEU_HoudiniVersion.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_MeshIndexFormat.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SimpleJSONUnity.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HARCImports.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_Extensions.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_EditorUtility.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_Platform.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetEvents.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_Task.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionPDG.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Handles\HEU_HandleParamBinding.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionManager.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_HAPIUtility.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_PartData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_UnityMaterialInfo.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_GeoNode.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptMeshInputUVLayoutExample.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadManager.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PluginStorage.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_OutputAttributesStore.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_VolumeCache.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetEvents.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_ObjectInstanceInfo.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Handles\HEU_HandleParamBinding.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_HAPIUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputMeshUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ExampleInstanceCustomAttribute.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SerializableDictionary.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_AssetSync.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetPreset.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tests\HEU_AssetEventReceiverTest.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetSerializedMetaData.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionManager.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_Curve.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_GeneratedOutput.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_Parameters.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GenerateGeoCache.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_OutputAttribute.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_HoudiniEngineError.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedLoadBuffers.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceMesh.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptCallbackExample.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceTerrain.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_InputNode.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputUtility.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_InstanceInputUIState.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGObjects.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionHAPI.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_Logger.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_NodeSync.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_HoudiniAssetRoot.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceTilemap.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIStructs.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionBase.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ExampleEvergreenQuery.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeneralUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SimpleJSON.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_GeoNode.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadManager.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HARCImports.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceTerrain.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_AttributesStore.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_TaskManager.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIFunctions.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedTaskLoadGeo.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PluginSettings.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PlatformWin.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIStructsMembers.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_RenderingPipelineDefines.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_AssetDatabase.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_CookLogs.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGAssetLink.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_ObjectNode.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_PartData.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceTilemap.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptCallbackExample.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGObjects.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_HoudiniAssetRoot.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterData.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_Defines.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_UnityMaterialInfo.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_ShelfTools.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeoGroup.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedTask.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetUpdater.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_MaterialFactory.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterModifier.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_ShelfTools.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGSession.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputMeshUtility.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_BaseSync.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_AttributeData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PlatformWin.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_CookLogs.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_ToolsInfo.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_AssetSync.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ExampleInstanceCustomAttribute.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeometryUtility.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_Curve.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_TaskManager.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIStructs.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_MaterialData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeoGroup.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGAssetLink.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SerializableDictionary.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_HoudiniAsset.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_OutputAttributesStore.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GenerateGeoCache.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_TestHelpers.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIStructsMembers.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_BoundingVolume.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionBase.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterface.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIFunctions.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SimpleJSON.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetPreset.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_Defines.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedTaskLoadGeo.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIConstants.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedTask.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_ObjectNode.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ExampleEvergreenQuery.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tests\HEU_AssetEventReceiverTest.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_MeshData.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_HoudiniEngineError.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedLoadBuffers.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_InputNode.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionHAPI.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_TerrainUtility.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetUpdater.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_RenderingPipelineDefines.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_InstanceInputUIState.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGSession.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_MaterialData.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIEnums.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_MeshIndexFormat.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_NodeSync.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_HoudiniAsset.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterface.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Handles\HEU_Handle.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SimpleJSONUnity.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionPDG.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_Logger.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterModifier.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_TestHelpers.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HEU_HoudiniVersion.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputUtility.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_GeoSync.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionSyncInfo.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetSerializedMetaData.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_ObjectInstanceInfo.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Handles\HEU_Handle.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_VolumeCache.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIEnums.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_AssetDatabase.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PluginSettings.cs" />
-    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_Extensions.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_BaseSync.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIConstants.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_EditorUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_ToolsInfo.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeometryUtility.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_Task.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceMesh.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_BoundingVolume.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_AttributeData.cs" />
     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptParameterExample.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PluginStorage.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_Parameters.cs" />
+    <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_MeshData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HoudiniEngineUnity.asmdef" />
@@ -386,11 +383,11 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.13.5\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -409,12 +406,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
