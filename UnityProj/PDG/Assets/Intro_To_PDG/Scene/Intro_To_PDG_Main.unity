@@ -2476,7 +2476,7 @@ MonoBehaviour:
       visibilityConditionSH: 0
       disabledConditionSH: 0
       useMenuItemTokenAsValue: 1
-    _showChildren: 0
+    _showChildren: 1
     _fileTypeInfo: 
     _folderListChildrenProcessed: 0
     _tabSelectedIndex: 0
@@ -2873,7 +2873,7 @@ MonoBehaviour:
       visibilityConditionSH: 0
       disabledConditionSH: 0
       useMenuItemTokenAsValue: 1
-    _showChildren: 0
+    _showChildren: 1
     _fileTypeInfo: 
     _folderListChildrenProcessed: 0
     _tabSelectedIndex: 0
